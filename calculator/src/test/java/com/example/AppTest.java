@@ -9,7 +9,7 @@ import org.junit.Test;
 public class AppTest {
     @Test
     public void testIntegration() {
-        Equation equation = new EquationImpl("1", "-2", "-3");
+        Equation equation = new EquationImpl("1", "-2", "-x");
         try {
             Solution solution = equation.solve();
             Assert.assertTrue(solution.getX1() == 3);
